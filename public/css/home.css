@@ -1,0 +1,135 @@
+/*movile*/
+.home__main__seccion{
+    width: 100%;
+    padding: 20px;
+}
+
+.home__main__seccion__article{
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.home__main__seccion__article img{
+    width: 100%;
+}
+
+.home__main__seccion__article h4{
+    margin: 20px 0;
+    font-size: 1.4rem;
+}
+
+.home__main__seccion__article p{
+    line-height: 1.2rem;
+}
+
+/*aside tutoriales*/
+
+.home__main__aside{
+    width: 100%;
+    padding: 20px;
+}
+
+.titulo_aside{
+    background-color:#ffffff;
+    padding: 10px;
+    font-weight: 900;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+    margin: 10px
+}
+
+.home__main__aside__seccion{
+    margin-bottom: 20px;
+    
+}
+
+.home__main__aside__section__article{
+    background-color: #ffffff;
+    border: 1px solid silver;
+    border-bottom: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+
+
+.home__main__aside__seccion__article:last-child{
+    border-bottom: 1px solid silver;
+
+}
+
+.home__main__aside__section--publicidad{
+    padding: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.home__main__aside__section--publicidad img{
+    width: 100%;
+} 
+
+.header_logo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_logo a{
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+@media (min-width: 768px){
+    .home__main__seccion{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home__main__seccion__article{
+        width: 50%;
+    }
+    .home__main__aside__section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 14px;
+    }
+    
+    .home__main__aside__section__article{
+        width: 49%;
+        border-bottom: 1px solid silver;
+    }
+    .home__main__aside__section--publicidad{
+flex-direction: row;        
+    }
+}
+
+@media (min-width: 1140px) {
+    .home__main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .home__main__seccion{
+        width: 70%;
+    }
+    .home__main__aside{
+        width: 30%;
+    }
+    .home__main__aside__section{
+        flex-direction: column;
+    }
+
+    .home__main__aside__section__article{
+        width: 100%;
+    }
+    .home__main__aside__section--publicidad{
+        flex-direction: column;
+    }
+}
